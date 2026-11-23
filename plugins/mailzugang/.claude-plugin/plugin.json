@@ -1,6 +1,6 @@
 {
   "name": "mailzugang",
-  "version": "0.10.2",
+  "version": "0.11.0",
   "description": "Mailzugang: Claude bedient Ihre IMAP/SMTP-Postfächer (Konnektor) und arbeitet dabei nach festen Abläufen für Überblick, Antwortentwürfe, Nachfassen und Aufräumen (Skill mail-workflows).",
   "author": {
     "name": "Mailzugang"
