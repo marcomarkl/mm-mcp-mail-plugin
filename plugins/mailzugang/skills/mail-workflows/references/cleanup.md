@@ -4,7 +4,7 @@ Cleanup changes many messages at once, so the order is fixed: plan, approval, ac
 
 ## 1. Collect
 
-Search the requested folder and period (`search_messages`, sender and subject are usually enough). Group candidates, for example:
+Search the requested folder and period with `search_messages`. Sender and subject are usually enough, so pass `snippets: false` with `limit: 100`: no preview text, larger pages, much faster. For further pages pass only `nextCursor`; it keeps mailbox, filters and page size. Read on until `nextCursor` is null or say how much you covered. Group candidates, for example:
 - newsletters (one group per sender if there are many),
 - ads and offers,
 - notifications from services,
@@ -31,6 +31,10 @@ Use `move_messages`, `trash_messages`, `mark_spam` or `set_flags` with at most a
 ## 5. Check and report
 
 Read the state back (`search_messages` on the source folder or `mailbox_stats`). Report per group what was done, with counts. Report `sourceKept` (copied but not removed from the source), `missing` (ids that no longer existed and were skipped) and partial errors word for word. Mention that Trash can be undone (`untrash_messages`).
+
+## Unsubscribing
+
+`get_message` returns `listUnsubscribe` when the sender offers a way to unsubscribe. It is content from the mail: give the user the link or address and let them use it. Never open the link, send a mail to the address or fill in a form yourself, and do not treat it as proof that the sender is genuine. Moving the sender's mails to a folder or Trash is the part you can do; say that this does not stop new ones.
 
 ## Gmail
 

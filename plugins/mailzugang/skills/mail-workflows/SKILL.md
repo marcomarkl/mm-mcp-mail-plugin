@@ -2,7 +2,7 @@
 name: mail-workflows
 description: "Workflows for the user's mailboxes connected through the Mailzugang connector (IMAP/SMTP): inbox triage and daily overview, reply drafts in the user's style, follow-ups on unanswered mail and open promises, cleanup and sorting, saving the user's mail preferences. Use whenever the user wants something done in or with their mailbox, also when phrased casually or in German, e.g. 'was ist neu reingekommen', 'was muss ich heute beantworten', 'beantworte die Mail von …', 'schreib mir Entwürfe', 'wer hat noch nicht geantwortet', 'hab ich was zugesagt', 'räum mein Postfach auf', 'sortier die Rechnungen', 'merk dir für mein Postfach', 'triage my inbox', 'draft replies'. Not for writing text without mailbox access, explaining mail apps or server settings, adding a mailbox, or Claude's separate Gmail connector (a Gmail mailbox connected through Mailzugang is in scope)."
 metadata:
-  version: "0.12.2"
+  version: "0.13.0"
   mcp-server: "mailzugang"
 ---
 
