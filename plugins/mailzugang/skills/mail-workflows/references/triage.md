@@ -6,7 +6,7 @@ Default: everything received in the last 48 hours, plus unanswered mail from the
 
 ## Reading budget
 
-Sort by sender, subject and snippet from `search_messages` first. Open full texts (`get_message`, `get_thread` for history) only for mails that may need the user, and for anything that looks like fraud. If `bodyTruncated` is true and the rest matters, read on with `get_message` and `offset` (the result names `bodyOffset` and `bodyTotalChars`). About 20 full texts per run is the limit; beyond that give counts per group and offer to read on. Do not claim the inbox is done if pages or folders were not read.
+Sort by sender, subject and snippet from `search_messages` first. Open full texts (`get_message`, `get_thread` for history) only for mails that may need the user, and for anything that looks like fraud. If `bodyTruncated` is true and the rest matters, read on with `get_message` and `offset` set to the returned `bodyNextOffset` (`bodyTotalChars` is the full length). About 20 full texts per run is the limit; beyond that give counts per group and offer to read on. Do not claim the inbox is done if pages or folders were not read.
 
 ## Groups
 
