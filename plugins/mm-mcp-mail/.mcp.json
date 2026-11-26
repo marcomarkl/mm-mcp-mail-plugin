@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "mailzugang": {
+    "mm-mcp-mail": {
       "type": "http",
       "url": "https://mcp-mail.marco-markl.at/mcp"
     }

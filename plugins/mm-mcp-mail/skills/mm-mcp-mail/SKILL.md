@@ -1,16 +1,16 @@
 ---
-name: mail-workflows
-description: "Workflows for the user's mailboxes connected through the Mailzugang connector (IMAP/SMTP): inbox triage and daily overview, reply drafts in the user's style, follow-ups on unanswered mail and open promises, cleanup and sorting, saving the user's mail preferences. Use whenever the user wants something done in or with their mailbox, also when phrased casually or in German, e.g. 'was ist neu reingekommen', 'was muss ich heute beantworten', 'beantworte die Mail von …', 'schreib mir Entwürfe', 'wer hat noch nicht geantwortet', 'hab ich was zugesagt', 'räum mein Postfach auf', 'sortier die Rechnungen', 'merk dir für mein Postfach', 'triage my inbox', 'draft replies'. Not for writing text without mailbox access, explaining mail apps or server settings, adding a mailbox, or Claude's separate Gmail connector (a Gmail mailbox connected through Mailzugang is in scope)."
+name: mm-mcp-mail
+description: "Workflows for the user's mailboxes connected through the mm-mcp-mail connector (IMAP/SMTP): inbox triage and daily overview, reply drafts in the user's style, follow-ups on unanswered mail and open promises, cleanup and sorting, saving the user's mail preferences. Use whenever the user wants something done in or with their mailbox, also when phrased casually or in German, e.g. 'was ist neu reingekommen', 'was muss ich heute beantworten', 'beantworte die Mail von …', 'schreib mir Entwürfe', 'wer hat noch nicht geantwortet', 'hab ich was zugesagt', 'räum mein Postfach auf', 'sortier die Rechnungen', 'merk dir für mein Postfach', 'triage my inbox', 'draft replies'. Not for writing text without mailbox access, explaining mail apps or server settings, adding a mailbox, or Claude's separate Gmail connector (a Gmail mailbox connected through mm-mcp-mail is in scope)."
 metadata:
-  version: "0.13.1"
-  mcp-server: "mailzugang"
+  version: "0.14.0"
+  mcp-server: "mm-mcp-mail"
 ---
 
 # Mail workflows
 
-The tools named here (`list_accounts`, `search_messages`, …) belong to the Mailzugang connector. Their prefix differs per client, so match them by the part after the last `__`. If Mailzugang appears twice (e.g. as connector and as `claude mcp add`), use one of them throughout: message ids only work on the connection that returned them.
+The tools named here (`list_accounts`, `search_messages`, …) belong to the mm-mcp-mail connector. Their prefix differs per client, so match them by the part after the last `__`. If mm-mcp-mail appears twice (e.g. as connector and as `claude mcp add`), use one of them throughout: message ids only work on the connection that returned them.
 
-If no Mailzugang tools are available, say so and point to setting up the connector. Do not rebuild these workflows with other mail connectors; their rules and ids differ.
+If no mm-mcp-mail tools are available, say so and point to setting up the connector. Do not rebuild these workflows with other mail connectors; their rules and ids differ.
 
 ## First step: account and preferences
 

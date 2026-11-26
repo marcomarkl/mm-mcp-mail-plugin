@@ -1,14 +1,14 @@
 {
-  "name": "mailzugang",
-  "description": "Privater Marketplace für Mailzugang (nur für freigeschaltete Personen).",
+  "name": "mm-mcp-mail",
+  "description": "Privater Marketplace für mm-mcp-mail (nur für freigeschaltete Personen).",
   "owner": {
-    "name": "Mailzugang"
+    "name": "mm-mcp-mail"
   },
   "plugins": [
     {
-      "name": "mailzugang",
-      "source": "./plugins/mailzugang",
-      "description": "Mailzugang: Claude bedient Ihre IMAP/SMTP-Postfächer (Konnektor) und arbeitet dabei nach festen Abläufen für Überblick, Antwortentwürfe, Nachfassen und Aufräumen (Skill mail-workflows)."
+      "name": "mm-mcp-mail",
+      "source": "./plugins/mm-mcp-mail",
+      "description": "mm-mcp-mail: Claude bedient Ihre IMAP/SMTP-Postfächer (Konnektor) und arbeitet dabei nach festen Abläufen für Überblick, Antwortentwürfe, Nachfassen und Aufräumen (Skill)."
     }
   ]
 }
