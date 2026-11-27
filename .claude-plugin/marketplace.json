@@ -1,6 +1,6 @@
 {
   "name": "mm-mcp-mail",
-  "description": "Privater Marketplace für mm-mcp-mail (nur für freigeschaltete Personen).",
+  "description": "Marketplace für mm-mcp-mail. Den Konnektor nutzen nur freigeschaltete Personen.",
   "owner": {
     "name": "mm-mcp-mail"
   },

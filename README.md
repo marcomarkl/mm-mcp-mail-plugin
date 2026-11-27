@@ -4,6 +4,62 @@ Plugin **mm-mcp-mail** mit Konnektor und Skill, beide unter demselben Namen. Das
 den Konnektor nutzen können aber nur freigeschaltete Personen (Anmeldung mit Mailadresse und Code).
 Gebaut aus dem Repo `mcp-mail` (`scripts/plugin-release.sh`), hier nichts von Hand ändern.
 
+## Was der Konnektor kann
+
+Claude arbeitet nur mit den Postfächern, die Sie selbst auf der Kontoseite verbunden haben.
+
+**Lesen**
+
+- Postfächer mit Bezeichnung, Adresse, Absendername, Senderegel, verbleibenden Sendungen dieser
+  Stunde, Grenze für Anhänge, Signatur und Ihren gespeicherten Vorgaben (nicht: Zusatzadressen,
+  bekannte Empfänger, Server und Benutzername)
+- Ordner mit Anzahl und ungelesenen Mails, Speicherbelegung
+- Suche nach Absender, Empfänger, Betreff, Text, Datum und Markierungen. Je Treffer gibt es eine
+  Vorschau der ersten 160 Zeichen, bis 50 Treffer je Seite (ohne Vorschau 100). Der Volltext
+  reicht ohne Datum 365 Tage zurück.
+- ganze Mails als Text, bis 50.000 Zeichen je Abruf und weiterlesbar. Externe Inhalte werden nie
+  geladen, Mails bleiben ungelesen. Auf Wunsch gibt es Kopfzeilen wie Received und
+  Authentication-Results.
+- Unterhaltungen bis 30 Mails
+- Anhänge bis 8 MB: Bilder, Textdateien und PDF mit Inhalt, andere Formate nur mit Name, Typ
+  und Größe
+- Kalendereinladungen und Entwürfe
+
+**Ordnen**
+
+- Ordner anlegen, umbenennen, leere Ordner löschen
+- verschieben, kopieren, markieren, als Spam einstufen, in den Papierkorb und zurück
+- endgültig löschen nur aus dem Papierkorb
+
+**Schreiben und senden**
+
+- Entwürfe anlegen, ändern und löschen. Antworten und Weiterleitungen als Entwurf behalten Zitat
+  und Verlauf.
+- senden, antworten, weiterleiten, Einladungen beantworten. Das gilt immer nach der Senderegel
+  des Postfachs: nur Entwürfe, nur an bekannte Empfänger oder direkt, dazu ein Sendelimit je
+  Stunde. Dieselbe Mail geht nicht zweimal kurz nacheinander hinaus, und nach einem unklaren
+  Versand sendet Claude nicht erneut.
+- Die Signatur hängt der Server an: die Textfassung an jede Mail, die HTML-Fassung an
+  formatierte Mails. Kalenderantworten tragen keine Signatur.
+- Anhänge mitschicken, zusammen bis 10 MB, bei kleinerer Grenze des Mailanbieters entsprechend
+  weniger
+
+**Sonst**
+
+- Ihre Vorgaben speichern (Stil, wichtige Absender, Ordner, stehende Regeln zum Verschieben und
+  Markieren), nur auf Ihre Bitte. Vorgaben erlauben nie das Senden.
+- Probleme mit dem Konnektor an den Betreiber melden, ohne Mailinhalte, Namen oder Adressen
+
+**Nicht möglich**
+
+- Postfach-Passwörter: Sie liegen verschlüsselt auf dem Server und gehen nie an Claude.
+- Postfächer anderer Personen.
+- Senderegel, Sendelimit, bekannte Empfänger, Signatur und Zugangsdaten ändern: Das geht nur auf
+  der Kontoseite.
+- Regeln, die im Hintergrund laufen, wenn Sie nicht mit Claude arbeiten.
+
+Was Claude abruft, steht danach in Ihrer Unterhaltung mit Claude.
+
 ## claude.ai und Claude Desktop
 
 1. Einstellungen → Customize → Plugins → Add → Add marketplace, `marcomarkl/mm-mcp-mail-plugin` eintragen.

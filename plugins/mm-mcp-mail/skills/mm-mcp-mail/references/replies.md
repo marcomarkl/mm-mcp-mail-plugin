@@ -10,7 +10,7 @@ The user works in their mail app, so drafts belong in the mailbox, not only in t
 
 Several replies: one draft per mail, each saved on its own, then one short report listing recipient and subject per draft. Never send a batch. Only when the user explicitly asks for text in the chat (to copy it elsewhere) skip the drafts.
 
-Do not add a signature: the server appends the mailbox signature. Do not paste the original mail: `reply` quotes it. Use `markdown: true` only when the text needs formatting.
+Do not add a signature: the server appends the mailbox signature (`signature` in `list_accounts`): `text` to every mail, `formatted` additionally to the HTML part of mails with `markdown: true`. Do not repeat a closing line or name the applicable signature already contains; if the applicable one is null (plain mail with `text` null, or `signature` null), nothing is appended, so end with the closing and name the preferences ask for. Do not paste the original mail: `reply` quotes it. Use `markdown: true` only when the text needs formatting.
 
 ## Content
 
@@ -30,6 +30,6 @@ If the user corrects a draft ("kürzer", "immer mit Beste Grüße"), offer to sa
 ## German letter conventions
 
 - Greeting with comma, then lower case: "Sehr geehrte Frau Kern," / "Hallo Tom," then a blank line, then "vielen Dank für …".
-- Closing without comma, on its own line, name below: "Beste Grüße" / "Lena Hofer".
+- Closing without comma, on its own line, name below: "Beste Grüße" / "Lena Hofer", unless the signature already contains them.
 - Formal: "Sehr geehrte Frau …" / "Sehr geehrter Herr …"; unknown recipient: "Sehr geehrte Damen und Herren,".
 - Du-form greetings: "Hallo …," or "Hi …,"; closing "Liebe Grüße" or "LG" only if the user writes that way.
