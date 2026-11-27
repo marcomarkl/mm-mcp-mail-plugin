@@ -1,13 +1,12 @@
-# mm-mcp-mail (privat)
+# mm-mcp-mail
 
-Plugin **mm-mcp-mail** mit Konnektor und Skill, beide unter demselben Namen. Nur für freigeschaltete
-Personen; Zugriff auf dieses Repo gibt es auf Einladung. Gebaut aus dem Repo `mcp-mail`
-(`scripts/plugin-release.sh`), hier nichts von Hand ändern.
+Plugin **mm-mcp-mail** mit Konnektor und Skill, beide unter demselben Namen. Das Repo ist öffentlich,
+den Konnektor nutzen können aber nur freigeschaltete Personen (Anmeldung mit Mailadresse und Code).
+Gebaut aus dem Repo `mcp-mail` (`scripts/plugin-release.sh`), hier nichts von Hand ändern.
 
 ## claude.ai und Claude Desktop
 
-1. Einstellungen → Customize → Plugins → Add → Add marketplace, `marcomarkl/mm-mcp-mail-plugin` eintragen. Beim ersten
-   Mal das GitHub-Konto verbinden und der Claude-GitHub-App Zugriff auf dieses Repo geben.
+1. Einstellungen → Customize → Plugins → Add → Add marketplace, `marcomarkl/mm-mcp-mail-plugin` eintragen.
 2. Beim Marketplace „Sync automatically“ einschalten, dann hält sich das Plugin selbst aktuell.
 3. Plugin „mm-mcp-mail“ installieren, im Reiter „Connectors“ des Plugins mm-mcp-mail verbinden und
    mit Mailadresse und Code anmelden.
@@ -17,7 +16,6 @@ Personen; Zugriff auf dieses Repo gibt es auf Einladung. Gebaut aus dem Repo `mc
 ## Claude Code
 
 ```bash
-gh auth login && gh auth setup-git
 claude plugin marketplace add marcomarkl/mm-mcp-mail-plugin
 claude plugin install mm-mcp-mail@mm-mcp-mail
 ```
