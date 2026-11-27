@@ -1,8 +1,9 @@
 {
   "name": "mm-mcp-mail",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "description": "mm-mcp-mail: Claude bedient Ihre IMAP/SMTP-Postfächer (Konnektor) und arbeitet dabei nach festen Abläufen für Überblick, Antwortentwürfe, Nachfassen und Aufräumen (Skill).",
   "author": {
     "name": "mm-mcp-mail"
-  }
+  },
+  "icon": "./icon.png"
 }
