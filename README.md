@@ -41,6 +41,8 @@ Claude arbeitet nur mit den Postfächern, die Sie selbst auf der Kontoseite verb
   Versand sendet Claude nicht erneut.
 - Die Signatur hängt der Server an: die Textfassung an jede Mail, die HTML-Fassung an
   formatierte Mails. Kalenderantworten tragen keine Signatur.
+- Auf Ihre Bitte oder nach Ihren Vorgaben lässt Claude die Signatur bei einzelnen Mails weg und
+  sagt das vor dem Senden.
 - Anhänge mitschicken, zusammen bis 10 MB, bei kleinerer Grenze des Mailanbieters entsprechend
   weniger
 

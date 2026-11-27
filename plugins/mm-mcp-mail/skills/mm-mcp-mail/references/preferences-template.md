@@ -18,7 +18,7 @@ Requests to save trash, spam or delete rules: save them as wishes, and tell the 
 Use these headings in this order, in the user's language as below. Omit empty sections.
 
 ## Stil und Anrede
-Kunden mit Sie, Kolleginnen und Kollegen mit Du. Kurz und freundlich, Gruß „Beste Grüße“.
+Kunden mit Sie, Kolleginnen und Kollegen mit Du. Kurz und freundlich, Gruß „Beste Grüße“. Antworten an Kolleginnen und Kollegen ohne Signatur.
 
 ## Wichtige Absender
 chefin@example.org, @kunde.example
