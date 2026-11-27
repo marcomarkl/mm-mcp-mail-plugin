@@ -29,6 +29,9 @@ Claude arbeitet nur mit den Postfächern, die Sie selbst auf der Kontoseite verb
 
 - Ordner anlegen, umbenennen, leere Ordner löschen
 - verschieben, kopieren, markieren, als Spam einstufen, in den Papierkorb und zurück
+- von Newslettern abmelden, nur auf Ihre ausdrückliche Bitte und nur, wenn der Absender das
+  nachweislich anbietet (signierte Abmeldeangabe); sonst gibt Claude Ihnen den Link mit einer
+  Einschätzung
 - endgültig löschen nur aus dem Papierkorb
 
 **Schreiben und senden**
